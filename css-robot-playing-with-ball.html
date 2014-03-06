@@ -5,6 +5,25 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <style>
 
+
+@keyframes moverobot {
+  from {
+    left: 100px;
+  }
+}
+
+@-webkit-keyframes moverobot {
+  from {
+    left: 100px;
+  }
+}
+
+@-moz-keyframes moverobot {
+  from {
+    left: 100px;
+  }
+}
+
 .robot {
   position: relative;
   left: 200px;
@@ -90,19 +109,19 @@
 
 @keyframes dance {
   from {
-    left: 800px;
+    left: 1000px;
   }
 }
 
 @-webkit-keyframes dance {
   from {
-    left: 800px;
+    left: 1000px;
   }
 }
 
 @-moz-keyframes dance {
   from {
-    left: 800px;
+    left: 1000px;
   }
 }
 
@@ -144,6 +163,8 @@ img {
 <button class="flash">laser eyes on/off</button>
 <button class="color">change color!</button>
 <button class="moves">play with ball</button>
+<button class="robotmovesL">move robot left</button>
+<button class="robotmovesR">move robot right</button>
 <img src="http://www.clker.com/cliparts/Y/O/v/v/9/V/beach-ball-hi.png">
 <script>
 // When eyes button is clicked, toggle laser class on brain
@@ -173,6 +194,20 @@ $(".color").click(function() {
 
 $(".moves").click(function() {
   $("img").toggle();
+
+
+
 });
+
+$(".robotmovesL").click(function() {
+  var loc = parseInt($(".robot").css("left"))-20;
+  $(".robot").css("left", loc );
+  
+});
+$(".robotmovesR").click(function() {
+  var loc = parseInt($(".robot").css("left"))+20;
+  $('.robot').css("left", loc);
+});
+
 </script>
 </body>
