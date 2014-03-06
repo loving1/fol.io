@@ -82,7 +82,6 @@ $('.flash').click(function() {
   top: -320px;
   z-index: -1;
 }
-
 .right {
    font-family: 'Poller one', verdana, arial, sans-serif;
   font-weight: bold;
@@ -96,7 +95,6 @@ $('.flash').click(function() {
   top: -600px;
   z-index: -1;
 }
-
 .foot {
   height: 40px;
   width: 40px;
@@ -112,6 +110,7 @@ $('.flash').click(function() {
 </head>
 
 <body>
+
 <div class="robot">
   <div class="beep"></div>
   <div class="brain"></div>
@@ -121,4 +120,28 @@ $('.flash').click(function() {
   </div>
   <div class="foot"></div>
 </div>
+
+<button class="flash">laser eyes on/off</button>
+<button class="color">color!</button>
+
+<script> 
+
+// when eyes button is clicked, toggle laser eyes 
+$('.flash').click(function() {
+  $('.brain').toggleClass('laser');
+});
+// When color button is clicked, pick a number 0-255
+$(".color").click(function() {
+  var red = Math.floor(Math.random() * 255);
+  var green = Math.floor(Math.random() * 255);
+  var blue = Math.floor(Math.random() * 255);
+  // Display the number in alert window
+  alert(red + "," + green + "," + blue);
+
+});
+</script>
+
+
+
+
 </body>
