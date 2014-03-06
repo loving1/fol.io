@@ -2,7 +2,7 @@
 
 <head>
 <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
-<script src="/assets/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <style>
 
 .robot {
@@ -116,7 +116,7 @@
   top: -10px;
   z-index: -1;
 }
-
+/*
 img {
   animation: dance 10s infinite;
   -webkit-animation: dance 10s infinite;
@@ -124,7 +124,7 @@ img {
   position: absolute;
   top: 200px; 
   left: 400px; 
-}
+} */
 </style>
 </head>
 
@@ -142,8 +142,8 @@ img {
 
 <button class="flash">laser eyes on/off</button>
 <button class="color">change color button 1!</button>
-<button class="moves">break dance</button>
-<img src="/assets/dance_cotter.gif">
+<!-- <button class="moves">break dance</button> 
+<img src="/assets/dance_cotter.gif"> -->
 <script>
 // When eyes button is clicked, toggle laser class on brain
 $(".flash").click(function() {
@@ -164,14 +164,14 @@ $(".color").click(function() {
   $('body').css("background", randomRGBA);
   
   // Display the RGBA value in an alert window
-  alert(randomRGBA);
+ // alert(randomRGBA);
   
   //Display the three values in an alert window
 //  alert(red + "," + green + "," + blue);
 });
 
-$(".moves").click(function() {
-  $("img").toggle();
-});
+//$(".moves").click(function() {
+//  $("img").toggle();
+//});
 </script>
 </body>
