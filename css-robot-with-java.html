@@ -193,6 +193,7 @@ $(".color").click(function() {
 });
 
 $(".moves").click(function() {
+
   $("img").toggle();
 
 
@@ -201,6 +202,7 @@ $(".moves").click(function() {
 
 $(".robotmovesL").click(function() {
   var loc = parseInt($(".robot").css("left"))-20;
+  var rot = $(".left").css("transform");
   $(".robot").css("left", loc );
   
 });

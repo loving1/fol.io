@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 
 <head>
-
 <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <style>
 
-.robot{
+
+@keyframes moverobot {
+  from {
+    left: 100px;
+  }
+}
+
+@-webkit-keyframes moverobot {
+  from {
+    left: 100px;
+  }
+}
+
+@-moz-keyframes moverobot {
+  from {
+    left: 100px;
+  }
+}
+
+.robot {
   position: relative;
   left: 200px;
 }
 
-.beep{
+.beep {
   width: 5px;
-  height: 0px;
+  height: 0;
   border: 5px solid transparent;
   border-top: 10px solid #777;
   border-bottom: 80px solid #888;
-  position: relative; 
+  position: relative;
   left: 140px;
+}
+
+@keyframes blink {
+  50% {
+    background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
+
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+  }
+}
+@-moz-keyframes blink {
+  50% {
+    background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+  }
+}
+.laser {
+  animation: blink .5s infinite;
+  -webkit-animation: blink .5s infinite;
+  -moz-animation: blink .5s infinite;
 }
 .brain {
   background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
@@ -29,8 +69,8 @@
   width: 150px;
   border-radius: 60px 60px 10px 10px;
   border-bottom: 40px solid #666;
-  position: relative; 
-  left: 70px; 
+  position: relative;
+  left: 70px;
 }
 .torso {
   height: 0;
@@ -41,7 +81,7 @@
   border-radius: 20px 20px 100px 100px;
 }
 .left {
-  font-family: 'Poller one', verdana, arial, sans-serif;
+  font-family: 'Poller One', verdana, arial, sans-serif;
   font-weight: bold;
   font-size: 250px;
   color: #666;
@@ -49,23 +89,40 @@
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
   position: relative;
-  left: -190px;
   top: -320px;
+  left: -190px;
   z-index: -1;
 }
-
 .right {
-   font-family: 'Poller one', verdana, arial, sans-serif;
+  font-family: 'Poller One', verdana, arial, sans-serif;
   font-weight: bold;
   font-size: 250px;
   color: #666;
   transform: scaleY(-1) rotate(20deg);
   -webkit-transform: scaleY(-1) rotate(20deg);
-  -moz-transform: scaleY(-1) rotate(20deg); 
+  -moz-transform: scaleY(-1) rotate(20deg);
   position: relative;
-  left: 200px;
-  top: -600px;
+  top: -620px;
+  left: 190px;
   z-index: -1;
+}
+
+@keyframes dance {
+  from {
+    left: 1000px;
+  }
+}
+
+@-webkit-keyframes dance {
+  from {
+    left: 1000px;
+  }
+}
+
+@-moz-keyframes dance {
+  from {
+    left: 1000px;
+  }
 }
 
 .foot {
@@ -74,15 +131,25 @@
   background: #ccc;
   border-radius: 40px;
   border: 15px solid #999;
-  position: relative; 
+  position: relative;
   left: 110px;
   top: -10px;
-  z-index: -1; 
+  z-index: -1;
+}
+
+img {
+  animation: dance 5s infinite;
+  -webkit-animation: dance 5s infinite;
+  -moz-animation: dance 5s infinite;
+  position: absolute;
+  top: 300px; 
+  left: 580px; 
 }
 </style>
 </head>
 
 <body>
+
 <div class="robot">
   <div class="beep"></div>
   <div class="brain"></div>
@@ -92,4 +159,55 @@
   </div>
   <div class="foot"></div>
 </div>
+
+<button class="flash">laser eyes on/off</button>
+<button class="color">change color!</button>
+<button class="moves">play with ball</button>
+<button class="robotmovesL">move robot left</button>
+<button class="robotmovesR">move robot right</button>
+<img src="http://www.clker.com/cliparts/Y/O/v/v/9/V/beach-ball-hi.png">
+<script>
+// When eyes button is clicked, toggle laser class on brain
+$(".flash").click(function() {
+  $(".brain").toggleClass('laser');
+});
+
+// When color button is clicked...
+$(".color").click(function() {
+  // assign each named color a random number 0-255
+  var red = Math.floor(Math.random() * 255);
+  var green = Math.floor(Math.random() * 255);
+  var blue = Math.floor(Math.random() * 255);
+  
+  // Generate an RGBA value from red, green and blue 
+  var randomRGBA = 'rgba('+red+','+green+','+blue+',1)';
+  
+  // and change body's background to ranom color 
+  $('body').css("background", randomRGBA);
+  
+  // Display the RGBA value in an alert window
+  //alert(randomRGBA);
+  
+  //Display the three values in an alert window
+//  alert(red + "," + green + "," + blue);
+});
+
+$(".moves").click(function() {
+  $("img").toggle();
+
+
+
+});
+
+$(".robotmovesL").click(function() {
+  var loc = parseInt($(".robot").css("left"))-20;
+  $(".robot").css("left", loc );
+  
+});
+$(".robotmovesR").click(function() {
+  var loc = parseInt($(".robot").css("left"))+20;
+  $('.robot').css("left", loc);
+});
+
+</script>
 </body>
