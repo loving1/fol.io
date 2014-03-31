@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<img src="images/KingLogo.jpg" alt="King Real Estate Logo">
+<img src="images/RA_Design_25.png" alt="King Real Estate Logo">
 
 <h4>Thank You!  A representative will contact you soon.</h4>
 
