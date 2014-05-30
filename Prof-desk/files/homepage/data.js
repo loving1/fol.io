@@ -1,0 +1,509 @@
+﻿$axure.loadCurrentPage({
+  "url":"homepage.html",
+  "generationDate":new Date(1390358637378.15),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"424e8b18f11b4309bcad9fb4a0c752b6",
+    "type":"Axure:Page",
+    "name":"Homepage",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"4eb729e6c9a04874bdae3c49ab64dd06",
+          "label":"homepagecontent",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":185,
+              "y":143},
+            "size":{
+              "width":1080,
+              "height":2796}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a8b92e3c252446fd97116c3c9f85a3b6",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":185,
+                  "y":143},
+                "size":{
+                  "width":1080,
+                  "height":2796}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/homepage/homepagecontent_u0.png"}},
+{
+          "id":"f0ed9d7f0aec4f91a88fbbd9649c2c36",
+          "label":"SignupReveal",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":false,
+          "style":{
+            "location":{
+              "x":185,
+              "y":143},
+            "size":{
+              "width":1080,
+              "height":367},
+            "visible":false},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"b94d4a5fa92a4c64a31f9a4c5a872497",
+              "label":"DropSign",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"a51bb92d58b74807a27c894b9dd96ad5",
+                  "label":"",
+                  "parentDynamicPanel":"f0ed9d7f0aec4f91a88fbbd9649c2c36",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":1080,
+                      "height":367}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"85bc02524af24ccd947b5846611ce15e",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"f0ed9d7f0aec4f91a88fbbd9649c2c36",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "size":{
+                          "width":1080,
+                          "height":367}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/homepage/u3.png"}},
+{
+                  "id":"136d7be50e8343439af2b4fe6d980634",
+                  "label":"",
+                  "parentDynamicPanel":"f0ed9d7f0aec4f91a88fbbd9649c2c36",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":190,
+                      "y":150},
+                    "size":{
+                      "width":340,
+                      "height":50}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"Case 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"fadeWidget",
+                              "description":"Show Facebook Login fade 500 ms treat as lightbox",
+                              "objectsToFades":[{
+                                  "objectPath":["b927924366c847be8a873e69b3be94e5"],
+                                  "fadeInfo":{
+                                    "fadeType":"show",
+                                    "options":{
+                                      "easing":"fade",
+                                      "duration":500,
+                                      "showType":"lightbox",
+                                      "lightbox":{
+                                        "r":0,
+                                        "g":0,
+                                        "b":0,
+                                        "a":155}}}}]}]}]}},
+                  "tabbable":true},
+{
+                  "id":"6674f86689254422816a631654ea1c03",
+                  "label":"",
+                  "parentDynamicPanel":"f0ed9d7f0aec4f91a88fbbd9649c2c36",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":1017,
+                      "y":20},
+                    "size":{
+                      "width":23,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"59be8cd06c62430eaad9ebe4d1f16fc7",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"f0ed9d7f0aec4f91a88fbbd9649c2c36",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "location":{
+                          "x":1017,
+                          "y":20},
+                        "size":{
+                          "width":23,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/homepage/u6.png"}}]},
+{
+              "id":"388f325033294297ae11b0657823ba7b",
+              "label":"Confirm",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"8aacfd227c8a46e3983f1c106e8e6366",
+                  "label":"",
+                  "parentDynamicPanel":"f0ed9d7f0aec4f91a88fbbd9649c2c36",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":1080,
+                      "height":367}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"5004d5bf49984eafab236ddbf37ffb71",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"f0ed9d7f0aec4f91a88fbbd9649c2c36",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "size":{
+                          "width":1080,
+                          "height":367}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/homepage/u8.png"}},
+{
+                  "id":"9ccb128dc5734aef89629d3c5f222d23",
+                  "label":"",
+                  "parentDynamicPanel":"f0ed9d7f0aec4f91a88fbbd9649c2c36",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":200,
+                      "y":270},
+                    "size":{
+                      "width":340,
+                      "height":50}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"Case 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"linkWindow",
+                              "description":"Open Dashboard in Current Window",
+                              "target":{
+                                "targetType":"page",
+                                "url":"dashboard.html",
+                                "includeVariables":true},
+                              "linkType":"current"}]}]}},
+                  "tabbable":true}]}]},
+{
+          "id":"9213e39323ee416e8d079696d4e58dda",
+          "label":"",
+          "type":"imageMapRegion",
+          "styleType":"imageMapRegion",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":1031,
+              "y":2720},
+            "size":{
+              "width":180,
+              "height":60}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"scrollToWidget",
+                      "description":"Scroll to Widget"},
+{
+                      "action":"wait",
+                      "description":"Wait 500 ms",
+                      "waitTime":500},
+{
+                      "action":"fadeWidget",
+                      "description":"Show SignupReveal slide down 1000 ms push widgets below swing 1000ms",
+                      "objectsToFades":[{
+                          "objectPath":["f0ed9d7f0aec4f91a88fbbd9649c2c36"],
+                          "fadeInfo":{
+                            "fadeType":"show",
+                            "options":{
+                              "easing":"slideDown",
+                              "duration":1000,
+                              "showType":"compress",
+                              "vertical":true,
+                              "compressEasing":"swing",
+                              "compressDuration":1000}}}]}]}]}},
+          "tabbable":true},
+{
+          "id":"b927924366c847be8a873e69b3be94e5",
+          "label":"Facebook Login",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":false,
+          "style":{
+            "location":{
+              "x":319,
+              "y":136},
+            "size":{
+              "width":813,
+              "height":754},
+            "visible":false},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":true,
+          "propagate":false,
+          "diagrams":[{
+              "id":"d3cbe5f09ba640618a2c16218bf57496",
+              "label":"State1",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"06b1dc773e1e44d38e886addc3787d1a",
+                  "label":"facebook modal",
+                  "parentDynamicPanel":"b927924366c847be8a873e69b3be94e5",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":813,
+                      "height":754}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"3a1594832867436d826e83cabcea6bf2",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"b927924366c847be8a873e69b3be94e5",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "size":{
+                          "width":813,
+                          "height":754}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/homepage/facebook_modal_u13.png"}},
+{
+                  "id":"6363babdecaf49e5be6b47fd6f158e25",
+                  "label":"",
+                  "parentDynamicPanel":"b927924366c847be8a873e69b3be94e5",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":710,
+                      "y":660},
+                    "size":{
+                      "width":90,
+                      "height":50}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"Case 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"Set SignupReveal to Confirm",
+                              "panelsToStates":[{
+                                  "panelPath":["f0ed9d7f0aec4f91a88fbbd9649c2c36"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":2,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":false,
+                                    "options":{
+                                      "compress":false}}}]},
+{
+                              "action":"fadeWidget",
+                              "description":"Hide Facebook Login fade 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["b927924366c847be8a873e69b3be94e5"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"fade",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true}]}]},
+{
+          "id":"cf9c65689e1847ac98da74d141b84713",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":185,
+              "y":0},
+            "size":{
+              "width":1080,
+              "height":142}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a5a691984e3e49ff9623f33b1a53440d",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":185,
+                  "y":0},
+                "size":{
+                  "width":1080,
+                  "height":142}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/homepage/u16.png"}},
+{
+          "id":"871e45c1b6c34f609e57b91800d1e1ef",
+          "label":"",
+          "type":"imageMapRegion",
+          "styleType":"imageMapRegion",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":1160,
+              "y":80},
+            "size":{
+              "width":70,
+              "height":20}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"Show SignupReveal slide down 1000 ms push widgets below swing 1000ms",
+                      "objectsToFades":[{
+                          "objectPath":["f0ed9d7f0aec4f91a88fbbd9649c2c36"],
+                          "fadeInfo":{
+                            "fadeType":"show",
+                            "options":{
+                              "easing":"slideDown",
+                              "duration":1000,
+                              "showType":"compress",
+                              "vertical":true,
+                              "compressEasing":"swing",
+                              "compressDuration":1000}}}]}]}]}},
+          "tabbable":true}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "4eb729e6c9a04874bdae3c49ab64dd06":{
+      "scriptId":"u0"},
+    "a8b92e3c252446fd97116c3c9f85a3b6":{
+      "scriptId":"u1"},
+    "f0ed9d7f0aec4f91a88fbbd9649c2c36":{
+      "scriptId":"u2"},
+    "a51bb92d58b74807a27c894b9dd96ad5":{
+      "scriptId":"u3"},
+    "85bc02524af24ccd947b5846611ce15e":{
+      "scriptId":"u4"},
+    "136d7be50e8343439af2b4fe6d980634":{
+      "scriptId":"u5"},
+    "6674f86689254422816a631654ea1c03":{
+      "scriptId":"u6"},
+    "59be8cd06c62430eaad9ebe4d1f16fc7":{
+      "scriptId":"u7"},
+    "8aacfd227c8a46e3983f1c106e8e6366":{
+      "scriptId":"u8"},
+    "5004d5bf49984eafab236ddbf37ffb71":{
+      "scriptId":"u9"},
+    "9ccb128dc5734aef89629d3c5f222d23":{
+      "scriptId":"u10"},
+    "9213e39323ee416e8d079696d4e58dda":{
+      "scriptId":"u11"},
+    "b927924366c847be8a873e69b3be94e5":{
+      "scriptId":"u12"},
+    "06b1dc773e1e44d38e886addc3787d1a":{
+      "scriptId":"u13"},
+    "3a1594832867436d826e83cabcea6bf2":{
+      "scriptId":"u14"},
+    "6363babdecaf49e5be6b47fd6f158e25":{
+      "scriptId":"u15"},
+    "cf9c65689e1847ac98da74d141b84713":{
+      "scriptId":"u16"},
+    "a5a691984e3e49ff9623f33b1a53440d":{
+      "scriptId":"u17"},
+    "871e45c1b6c34f609e57b91800d1e1ef":{
+      "scriptId":"u18"}}});
